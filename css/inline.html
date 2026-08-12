@@ -4,63 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning full stack</title>
+    <title>inline style</title>
     <link rel="icon" href="/htmls/mideas/icoon.png">
+    <style>
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        h1 {
+            text-align: center;
+            color: green;
+        }
+
+        .card {
+            height: 400px;
+            width: 20%;
+            background-color: lightblue;
+            float: left;
+            margin: 2%;
+        }
+
+        .card>img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .scroll {
+            height: 200px;
+            /* overflow: scroll; */
+            overflow-y: scroll;
+            overflow-x: hidden;
+            scrollbar-width: thin;
+        }
+
+        #manali {
+            background-color: #eaba55;
+        }
+
+        #kolkata {
+            background-color: #b98377;
+        }
+
+        #banglore {
+            background-color: #e8d4a2;
+        }
+
+        #delhi {
+            background-color: #e5c49e;
+        }
+    </style>
 </head>
 
-<body style="background-color: lightgreen;">
-    <header style="text-align: center;">
-        <h1>About Cities </h1>
-        <a href="#manali">Manali</a> |
-        <a href="#kolkata">Kolkata</a> |
-        <a href="#banglore">Banglore</a>
-
-    </header>
-
-    <section id="manali" style=" background-color: lightblue;">
-        <div style="text-align: center;">
-            <h3>Manali</h3>
-            <img src="/htmls/mideas/manali.jfif" alt="Manali" style="width: 100%; height:300px;">
-            <div style="text-align: center;">
-                <p>Manali is a popular high-altitude resort town in Himachal Pradesh, India, set along the Beas River.
-                    Known for snow-capped peaks, pine forests, and adventure sports, it sits in the Kullu Valley about
-                    544 km
-                    northeast of New Delhi. </p>
-            </div>
-        </div>
-
-    </section>
+<body>
+    <h1> About Cities </h1>
     <hr>
-    <section id="kolkata" style=" background-color: lightblue;">
-        <div style="text-align: center;">
-            <h3>Kolkata</h3> 
-            <img src="/htmls/mideas/kolkata.jfif" alt="Kolkata" style="width: 100%; height: 300px;">
+    <div class="card" id="manali">
+        <div class="">
+            <img src="/htmls/mideas/manali.jfif" alt="manali"style="width: 100%;height: 200px;">
         </div>
-        <div style="text-align: center;">
-            <p>Kolkata is the capital and largest city of the Indian state of West Bengal. It is located on the east bank of
-                the Hooghly River, a distributary of the Ganges, and is known for its rich cultural heritage, colonial
-                architecture, and vibrant street life.</p>
+        <div class="scroll">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam recusandae vitae voluptatem
+            facere
+            earum sed tempora, quam optio labore quo libero dicta sapiente ab delectus maxime minus? A,
+            necessitatibus.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, qui eum adipisci voluptates, inventore
+            ex
+            officiis odit quia iusto fugiat, numquam aliquam maiores mollitia asperiores? Fugit, nam! Optio, itaque
+            quibusdam!
         </div>
-    </section>
-    <hr> 
-    <section id="banglore" style=" background-color: lightblue;">
-        <div style="text-align: center;">
-            <h3>Banglore</h3>
-            <img src="/htmls/mideas/banglore.jfif" alt="Banglore" style="width: 100%; height: 300px;">
-        </div>
-        <div style="text-align: center;">
-            <p>Bangalore, also known as Bengaluru, is the capital and largest city of the Indian state of Karnataka. It is
-                located in the southern part of the state and is known for its technology industry, beautiful gardens, and
-                pleasant climate.</p>
-        </div>
-    </section>
-    <footer>
-        <center>
-            <hr>
-            <h5>&copy; Learning full stack 2026 All rights reserved.</h5>
-
-        </center>
-    </footer>
+    </div>
+    <div class="card" id="kolkata">
+        <img src="/htmls/mideas/kolkata.jfif" alt="kolkata">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam recusandae vitae voluptatem facere
+        </p>
+    </div>
+    <div class="card" id="banglore">
+        <img src="/htmls/mideas/banglore.jfif" alt="" style="width: 100%;height: 200px;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam recusandae vitae voluptatem facere
+        </p>
+    </div>
+    <div class="card" id="delhi">
+        <img src="/htmls/mideas/delhi.jfif" alt="" >
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam recusandae vitae voluptatem facere
+        </p>
+    </div>
 </body>
 
 </html>
