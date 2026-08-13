@@ -1,5 +1,6 @@
 body {
     margin: auto;
+    -webkit-scrollbar: none;
 }
 
 /* < !-- header section --> */
@@ -14,8 +15,6 @@ header {
     float: left;
     margin-top: 7px;
     margin-left: 15px;
-
-
 }
 
 .social {
@@ -39,7 +38,31 @@ header {
 .search {
     height: 450px;
     border: 1px solid black;
-    background-image: url("./images/bg1.jfif");
-    background-repeat: no-repeat;
+    background-image: url("./images/search.png");
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
     background-size: 100% 450px;
- }
+}
+
+.logo {
+    height: 75px;
+    width: 85px;
+    background-color: azure;
+    border-radius: 50%;
+    position: absolute;
+    margin: 5px 0px 0px 46%;
+}
+
+.logo>span {
+    font: bold 55px roboto;
+    color: firebrick;
+    position: absolute;
+    margin: 7px 0px 0px 20%;
+}
+.heading{
+       font:   50px roboto;
+       letter-spacing: 3px;
+    color:  rgb(12, 11, 11);
+    position: absolute;
+    margin: 7% 0px 0px 27%;
+}
