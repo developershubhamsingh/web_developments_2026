@@ -1,0 +1,45 @@
+body {
+    margin: auto;
+}
+
+/* < !-- header section --> */
+header {
+    height: 50px;
+    background-color: #1a0909;
+}
+
+.brand {
+    color: aliceblue;
+    font-size: 35px;
+    float: left;
+    margin-top: 7px;
+    margin-left: 15px;
+
+
+}
+
+.social {
+    float: right;
+    margin-right: 15px;
+
+}
+
+.social>a {
+    text-decoration: none;
+}
+
+.social>a>img {
+    height: 35px;
+    width: 45px;
+    border-radius: 50%;
+    margin-top: 7px;
+}
+
+/* < !-- search section --> */
+.search {
+    height: 450px;
+    border: 1px solid black;
+    background-image: url("./images/bg1.jfif");
+    background-repeat: no-repeat;
+    background-size: 100% 450px;
+ }
