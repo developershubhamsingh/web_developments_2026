@@ -1,7 +1,15 @@
+* {
+    scrollbar-width: thin;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Poori website ke saare boxes safe ho jayenge */
+}
+
 body {
     margin: auto;
     -webkit-scrollbar: none;
-}
+ }
 
 /* < !-- header section --> */
 header {
@@ -151,10 +159,9 @@ select:hover {
 }
 
 .main-box {
-    box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* border: 1px solid black; */
+    border: 1px solid black;
     padding: 28px 0 28px 28px;
     grid-gap: 27px;
 
