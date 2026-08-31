@@ -89,7 +89,7 @@
      width: 40%;
      display: flex;
      padding-left: 30px;
-     gap: 13px;
+     gap: 10px;
 
  }
 
@@ -124,7 +124,7 @@
  }
 
  .QuickSearch h1 {
-     color: #3f1b1b;
+      color: #3f1b1b;
      letter-spacing: 1px;
 
  }
@@ -140,7 +140,7 @@
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      padding-top: 17px;
-     column-gap: 17px;
+     column-gap: 3px;
      row-gap: 35px;
  }
 
@@ -150,7 +150,7 @@
      box-shadow: 3px 3px 5px gray;
      /* border: 1px solid; */
      box-sizing: border-box;
-     width: 350px;
+     width: 90%;
      height: 180px;
      display: flex;
  }

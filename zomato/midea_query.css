@@ -1,0 +1,431 @@
+@media (max-width: 1024px) {
+    .logo {
+        height: 70px;
+        width: 80px;
+    }
+
+    .backgr {
+        letter-spacing: 2px;
+        font-size: 2.3rem;
+        font-weight: 700;
+    }
+
+    .selectBox {
+        height: 30px;
+        width: 50%;
+        padding-left: 40px;
+    }
+
+    select {
+        letter-spacing: 1px;
+        font-size: 1rem;
+    }
+
+    .QuickSearch h1 {
+        letter-spacing: 2px;
+        font-size: 2rem;
+    }
+
+    .QuickSearch h3 {
+        letter-spacing: 2px;
+        line-height: 2;
+        font-size: 1.3rem;
+    }
+
+    .card {
+        width: 94%;
+        height: 130px;
+    }
+
+    .tileHeadindg {
+        font-size: 1.7rem;
+    }
+
+    .tile2>.tileSubHeadindg {
+        font-size: 1.1rem;
+        box-sizing: border-box;
+    }
+
+    .footerText {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+    .backgr {
+        letter-spacing: 2px;
+        font-size: 2rem;
+    }
+
+    .selectBox {
+        height: 30px;
+        width: 60%;
+        padding-left: 25px;
+    }
+
+    select {
+        letter-spacing: 1px;
+        font-size: 1rem;
+    }
+
+    .QuickSearch h1 {
+        letter-spacing: 1px;
+        font-size: 2rem;
+    }
+
+    .QuickSearch h3 {
+        letter-spacing: 2px;
+        line-height: 2;
+        font-size: 1.5rem;
+
+    }
+
+    .box {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 7px;
+    }
+
+    .card {
+        width: 94%;
+        height: 125px;
+
+    }
+
+    .tileHeadindg {
+        font-size: 1.5rem;
+    }
+
+    .tile2>.tileSubHeadindg {
+        font-size: 1.2rem;
+    }
+
+    .footerText {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .logo {
+        height: 60px;
+        width: 70px;
+        margin-top: 1.5%;
+    }
+
+    .backgr {
+        letter-spacing: 1px;
+        font-size: 1.8rem;
+    }
+
+    .selectBox {
+        height: 28px;
+        width: 94%;
+        padding-left: 25px;
+    }
+
+    select {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        font-size: .80rem;
+    }
+
+    .QuickSearch h1 {
+        letter-spacing: 1px;
+        font-size: 1.8rem;
+        margin: 0 0 0 2%;
+    }
+
+    .QuickSearch h3 {
+        letter-spacing: 2px;
+        line-height: 2;
+        font-size: 1.3rem;
+        margin: 0 0 0 2%;
+
+    }
+
+    .box {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 25px;
+    }
+
+    .card {
+        width: 90%;
+        height: 110px;
+        margin: 1% 0 0 2%;
+    }
+
+    .tileHeadindg {
+        font-size: 1.5rem;
+    }
+
+    .tile2>.tileSubHeadindg {
+        font-size: 1rem;
+    }
+
+    .footerText {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .logo {
+        height: 54px;
+        width: 70px;
+    }
+
+    .backgr {
+        letter-spacing: 1px;
+        font-size: 1.8rem;
+    }
+
+    .selectBox {
+        height: 27px;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    select {
+        font-size: .75rem;
+    }
+
+
+    .QuickSearch h1 {
+        letter-spacing: 1px;
+        font-size: 1.7rem;
+        margin: 0 0 0 1%;
+    }
+
+    .QuickSearch h3 {
+        letter-spacing: 2px;
+        line-height: 2;
+        font-size: 1.2rem;
+        margin: 0 0 0 1%;
+
+    }
+
+    .box {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 7px;
+        padding-top: 13px;
+
+    }
+
+    .card {
+        width: 100%;
+        height: 120px;
+        margin: 1% 0 0 1%;
+    }
+
+    .tileHeadindg {
+        font-size: 1.4rem;
+    }
+
+    .tile2>.tileSubHeadindg {
+        font-size: 1rem;
+    }
+
+    .footerText {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .logo {
+        height: 54px;
+        width: 70px;
+    }
+
+    .backgr {
+        /* letter-spacing: 1px; */
+        font-size: 1.5rem;
+    }
+
+    .selectBox {
+        height: 26px;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    select {
+        font-size: .74rem;
+    }
+
+    #restselect {
+        width: 54%;
+    }
+
+    .QuickSearch h1 {
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+        margin: 0 0 0 1%;
+    }
+
+    .QuickSearch h3 {
+        letter-spacing: 2px;
+        line-height: 2;
+        font-size: 1.1rem;
+        margin: 0 0 0 1%;
+
+    }
+
+    .box {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 7px;
+        padding-top: 13px;
+
+    }
+
+    .card {
+        width: 100%;
+        height: 120px;
+        margin: 1% 0 0 1%;
+    }
+
+    .tileHeadindg {
+        font-size: 1.3rem;
+    }
+
+    .tile2>.tileSubHeadindg {
+        font-size: 1rem;
+    }
+
+    .footerText {
+        font-size: .85rem;
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .logo {
+        height: 70px;
+        width: 80px;
+    }
+
+    .backgr {
+        letter-spacing: 2px;
+        font-size: 2.7rem;
+        font-weight: 700;
+    }
+
+    .selectBox {
+        height: 30px;
+        width: 50%;
+        padding-left: 50px;
+    }
+
+    select {
+        letter-spacing: 2px;
+        font-size: 1.1rem;
+    }
+
+    .QuickSearch h1 {
+        letter-spacing: 2px;
+        font-size: 2.1rem;
+    }
+
+    .QuickSearch h3 {
+        letter-spacing: 2px;
+        line-height: 2;
+        font-size: 1.5rem;
+    }
+
+    .box {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .card {
+        width: 94%;
+        height: 135px;
+    }
+
+    .tileHeadindg {
+        font-size: 1.7rem;
+    }
+
+    .tile2>.tileSubHeadindg {
+        font-size: 1.2rem;
+        box-sizing: border-box;
+    }
+
+    .footerText {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+    }
+}
+
+@media (min-width:1920px) {
+    .logo {
+        height: 95px;
+        width: 120px;
+    }
+
+    .backgr {
+        letter-spacing: 3px;
+        font-size: 3.2rem;
+    }
+
+    .selectBox {
+        height: 55px;
+        width: 40%;
+        padding-left: 30px;
+    }
+
+    select {
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+    }
+
+    .QuickSearch h1 {
+        letter-spacing: 2px;
+        font-size: 2.5rem;
+    }
+
+    .QuickSearch h3 {
+        letter-spacing: 2px;
+        line-height: 2;
+        font-size: 1.7rem;
+    }
+
+    .box {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .card {
+        width: 94%;
+        height: 180px;
+    }
+
+    .tileHeadindg {
+        font-size: 1.9rem;
+    }
+
+    .tile2>.tileSubHeadindg {
+        font-size: 1.3rem;
+        box-sizing: border-box;
+    }
+
+    .footertext {
+        font-size: 25px;
+
+    }
+
+    .footerText {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+    }
+}
