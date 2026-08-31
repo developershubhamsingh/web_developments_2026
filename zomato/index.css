@@ -75,7 +75,7 @@
      background-color: rgba(105, 51, 19, .7);
      letter-spacing: 2px;
      text-shadow: 0 0 1px red;
-     font-size: 45px;
+     font-size: 40px;
      font-weight: 700;
  }
 
@@ -85,7 +85,7 @@
 
  .selectBox {
      /* border: 1px solid; */
-     height: 35px;
+     height: 30px;
      width: 40%;
      display: flex;
      padding-left: 30px;
@@ -151,7 +151,7 @@
      /* border: 1px solid; */
      box-sizing: border-box;
      width: 90%;
-     height: 180px;
+     height: 150px;
      display: flex;
  }
 
