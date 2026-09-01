@@ -61,6 +61,29 @@
      display: flex;
      justify-content: center;
      align-items: center;
+     animation: logo_blink 4s infinite;
+     will-change: transform;
+ }
+ @keyframes logo_blink {
+     0% {
+         transform: scale(1);
+     }
+
+     25% {
+         transform: scale(1.1);
+     }
+
+     50% {
+         transform: scale(1);
+     }
+
+     75% {
+         transform: scale(1.1);
+     }
+
+     100% {
+         transform: scale(1);
+     }
  }
 
  .logo>span {
@@ -124,7 +147,7 @@
  }
 
  .QuickSearch h1 {
-      color: #3f1b1b;
+     color: #3f1b1b;
      letter-spacing: 1px;
 
  }
@@ -153,7 +176,41 @@
      width: 90%;
      height: 150px;
      display: flex;
+     animation: dance 20s infinite;
+     will-change: transform;
+
  }
+
+ @keyframes dance {
+     0% {
+         transform: rotate(0deg);
+         /* transform: scale(1.1); */
+     }
+
+     25% {
+         transform: rotate(-5deg);
+         /* transform: scale(1); */
+     }
+
+     50% {
+         transform: rotate(0deg);
+         transform: scale(1.1);
+     }
+
+     75% {
+         transform: rotate(5deg);
+         /* transform: scale(1); */
+     }
+
+     100% {
+         transform: rotate(0deg);
+         transform: scale(1.1);
+     }
+ }
+
+ /* .card:hover {
+     transform: scale(1.1);
+ } */
 
  .tile1 {
      /* border: 1px solid; */
