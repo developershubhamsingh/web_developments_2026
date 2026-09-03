@@ -7,10 +7,15 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .form-control:focus {
+            box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.25);
+        }
+    </style>
 
 </head>
 
-<body>
+<body class="bg-light">
 
     <!-- <div class="container mt-5  ">
         <div class="row p-2 justify-content-center border border-1 border-light">
@@ -50,6 +55,104 @@
         </div>
     </div> -->
     <hr>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 ">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header py-3 bg-success text-white text-center fw-semibold">
+                        <h5 class="mb-0">Employee Form</h5>
+                    </div>
+                    <div class="card-body p-4">
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="name" class="form-label fw-semibold">Name </label>
+                                <input type="text" id="name" class="form-control" placeholder="Enter Your Name"
+                                    required>
+                            </div>
+
+                            <div class="row mb-3 g-2">
+                                <div class="col-12 col-md-6">
+                                    <label for="email" class="form-label fw-semibold">Email </label>
+                                    <input type="email" id="email" class="form-control" placeholder="Enter Your Email"
+                                        required>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="password" class="form-label fw-semibold">Password </label>
+                                    <input type="password" id="password" class="form-control"
+                                        placeholder="Enter Your Password">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="language" class="form-label">language </label>
+                                <div class="d-flex gap-5">
+                                    <div class="form-check">
+                                        <input type="radio" id="hindi" name="selectLanguage" class="form-check-input"
+                                            value="Hindi">
+                                        <label for="hindi" class="form-check-label">Hindi</label>
+
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input type="radio" id="english" name="selectLanguage" class="form-check-input"
+                                            value="English">
+                                        <label for="english" class="form-check-label">English</label>
+
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input type="radio" id="both" name="selectLanguage" class="form-check-input"
+                                            value="Hindi&English">
+                                        <label for="both" class="form-check-label">Both</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class=" btn btn-outline-success w-75">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- <div class="container mt-5  ">
         <div class="row p-2 justify-content-center border border-1 border-light">
             <div class="col-12 col-md-6 col-lg-4">
@@ -86,105 +189,6 @@
         </div>
     </div> -->
 
-    <!--  -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Form Layout</title>
-    <!-- बिल्कुल सही और स्थिर Bootstrap 5.3.3 CDN लिंक -->
-    <link href="https://jsdelivr.net" rel="stylesheet">
-    <script src="https://jsdelivr.net"></script>
-</head>
-<body class="bg-light">
-
-    <!-- मुख्य कंटेनर और रो (सेंटर अलाइनमेंट के लिए) -->
-    <div class="container mt-5">
-        <!-- इमेज के अनुसार फॉर्म थोड़ा चौड़ा है, इसलिए हमने col-lg-8 लिया है ताकि डेस्कटॉप पर अच्छा दिखे -->
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
-                
-                <!-- मुख्य कार्ड (border-0 और shadow-sm) -->
-                <div class="card border-0 shadow-sm">
-                    
-                    <!-- कार्ड हेडर (इमेज के अनुसार ब्लू बैकग्राउंड और व्हाइट टेक्स्ट) -->
-                    <div class="card-header bg-primary text-white py-3">
-                        <h5 class="mb-0 fw-bold">Employee Form</h5>
-                    </div>
-                    
-                    <!-- कार्ड बॉडी (असली फॉर्म) -->
-                    <div class="card-body p-4">
-                        <form action="">
-                            
-                            <!-- मुख्य ग्रिड रो (Row) जो सभी फ़ील्ड्स को संभालेगी -->
-                            <div class="row g-3">
-                                
-                                <!-- 1. FirstName (पूरी चौड़ाई) -->
-                                <div class="col-12">
-                                    <label for="firstName" class="form-label fw-semibold text-dark">FirstName</label>
-                                    <input type="text" id="firstName" class="form-control" required>
-                                </div>
-
-                                <!-- 2. LastName (पूरी चौड़ाई) -->
-                                <div class="col-12">
-                                    <label for="lastName" class="form-label fw-semibold text-dark">LastName</label>
-                                    <input type="text" id="lastName" class="form-control" required>
-                                </div>
-
-                                <!-- 3. Email (आधा हिस्सा - col-md-6) -->
-                                <div class="col-12 col-md-6">
-                                    <label for="email" class="form-label fw-semibold text-dark">Email</label>
-                                    <input type="email" id="email" class="form-control" required>
-                                </div>
-
-                                <!-- 4. Password (आधा हिस्सा - col-md-6) -->
-                                <div class="col-12 col-md-6">
-                                    <label for="password" class="form-label fw-semibold text-dark">Password</label>
-                                    <input type="password" id="password" class="form-control" required>
-                                </div>
-
-                                <!-- 5. Country (तिहाई हिस्सा - col-md-4) -->
-                                <div class="col-12 col-md-4">
-                                    <label for="country" class="form-label fw-semibold text-dark">Country</label>
-                                    <input type="text" id="country" class="form-control" required>
-                                </div>
-
-                                <!-- 6. State (तिहाई हिस्सा - col-md-4) -->
-                                <div class="col-12 col-md-4">
-                                    <label for="state" class="form-label fw-semibold text-dark">State</label>
-                                    <input type="text" id="state" class="form-control" required>
-                                </div>
-
-                                <!-- 7. City (तिहाई हिस्सा - col-md-4) -->
-                                <div class="col-12 col-md-4">
-                                    <label for="city" class="form-label fw-semibold text-dark">City</label>
-                                    <input type="text" id="city" class="form-control" required>
-                                </div>
-
-                                <!-- 8. बटन सेक्शन (इमेज के अनुसार लेफ्ट अलाइन छोटे बटन) -->
-                                <div class="col-12 mt-4">
-                                    <!-- गप देने के लिए gap-2 लगाया है -->
-                                    <div class="d-flex gap-2">
-                                        <!-- सबमिट बटन (हरा रंग - btn-success) -->
-                                        <button type="submit" class="btn btn-success px-4 fw-bold">Submit</button>
-                                        <!-- रीसेट बटन (लाल रंग - btn-danger) -->
-                                        <button type="reset" class="btn btn-danger px-4 fw-bold">Reset</button>
-                                    </div>
-                                </div>
-
-                            </div> <!-- ग्रिड रो समाप्त -->
-                        </form>
-                    </div> <!-- कार्ड बॉडी समाप्त -->
-
-                </div> <!-- कार्ड समाप्त -->
-
-            </div>
-        </div>
-    </div>
-
-</body>
-</html>
 
 
 </body>
