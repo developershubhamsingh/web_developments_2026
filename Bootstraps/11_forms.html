@@ -8,8 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-        .form-control:focus {
+        .form-control:focus,
+        .form-select:focus {
             box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.25);
+        }
+
+        .form-select {
+            appearance: none;
+            background-image: none;
         }
     </style>
 
@@ -17,107 +23,193 @@
 
 <body class="bg-light">
 
-    <!-- <div class="container mt-5  ">
-        <div class="row p-2 justify-content-center border border-1 border-light">
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-sm border-0">
-                    <div class="card-header text-center py-3 bg-success text-white">
-                        <h5 class="mb-0 fw-bold">Employee Form </h5>
-                    </div>
-                    <div class="card-body p-4">
-                        <form action="">
-                            <div class="mb-3">
-                                <label for="name" class="form-label fw-semibold text-dark">Full Name : </label>
-                                <input type="text" id="name" class="form-control" placeholder="Enter Your Name ">
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label fw-semibold text-dark">Email : </label>
-                                <input type="email" id="email" class="form-control" placeholder="Enter Your Email ">
-                            </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label fw-semibold text-dark">Password : </label>
-                                <input type="password" id="password" class="form-control"
-                                    placeholder="Enter Your Password ">
-                            </div>
-                            <div class="mb-3">
-                                <label for="mobile" class="form-label fw-semibold text-dark">Mobile : </label>
-                                <input type="number" id="mobile" class="form-control" placeholder="Enter Your Mobile Number ">
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                <button type="submit" class="mt-2 btn btn-outline-success w-75 py-2">Submit</button>
-                            </div>
-                        </form>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div> -->
-    <hr>
-
     <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-6 ">
-                <div class="card shadow-sm border-0">
-                    <div class="card-header py-3 bg-success text-white text-center fw-semibold">
-                        <h5 class="mb-0">Employee Form</h5>
+        <div class="row justify-content-center  ">
+            <div class="col-12 col-md-6">
+                <div class="card shadow-sm border-0 ">
+                    <div class="card-header py-3 bg-success text-light text-center">
+                        <h3 class="mb-0">Employee Form</h3>
                     </div>
                     <div class="card-body p-4">
                         <form action="">
-                            <div class="mb-3">
-                                <label for="name" class="form-label fw-semibold">Name </label>
-                                <input type="text" id="name" class="form-control" placeholder="Enter Your Name"
-                                    required>
+                            <div class="mb-2">
+                                <label for="name" class="form-label fw-semibold">Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Enter Your Name">
                             </div>
-
-                            <div class="row mb-3 g-2">
-                                <div class="col-12 col-md-6">
-                                    <label for="email" class="form-label fw-semibold">Email </label>
-                                    <input type="email" id="email" class="form-control" placeholder="Enter Your Email"
-                                        required>
+                            <div class="row mb-2 g-1">
+                                <div class="col-12 col-md-6 mb-1">
+                                    <label for="email" class="form-label fw-semibold">Email</label>
+                                    <input type="email" id="email" class="form-control" placeholder="Enter Your Email">
                                 </div>
                                 <div class="col-12 col-md-6">
-                                    <label for="password" class="form-label fw-semibold">Password </label>
+                                    <label for="password" class="form-label fw-semibold">Password</label>
                                     <input type="password" id="password" class="form-control"
-                                        placeholder="Enter Your Password">
+                                        placeholder="Enter Your password">
                                 </div>
                             </div>
 
-                            <div class="mb-3">
-                                <label for="language" class="form-label">language </label>
+                            <div class="mb-2">
+                                <label for="language" class="form-label fw-semibold">Language</label>
                                 <div class="d-flex gap-5">
                                     <div class="form-check">
-                                        <input type="radio" id="hindi" name="selectLanguage" class="form-check-input"
-                                            value="Hindi">
+                                        <input type="radio" id="hindi" name="language" class="form-check-input"
+                                            value="hindi">
                                         <label for="hindi" class="form-check-label">Hindi</label>
-
                                     </div>
-
                                     <div class="form-check">
-                                        <input type="radio" id="english" name="selectLanguage" class="form-check-input"
-                                            value="English">
+                                        <input type="radio" id="english" name="language" class="form-check-input"
+                                            value="english">
                                         <label for="english" class="form-check-label">English</label>
-
                                     </div>
-
                                     <div class="form-check">
-                                        <input type="radio" id="both" name="selectLanguage" class="form-check-input"
-                                            value="Hindi&English">
+                                        <input type="radio" id="both" name="language" class="form-check-input"
+                                            value="hindi_english">
                                         <label for="both" class="form-check-label">Both</label>
                                     </div>
                                 </div>
                             </div>
+                            <div class="row mb-4 g-2">
+                                <div class="col-12 col-md-4">
+                                    <label for="state" class=" form-label fw-semibold">State</label>
+                                    <input id="state" class="form-control" readonly value="West Bengal">
+                                </div>
+
+                                <div class="col-12 col-md-4">
+                                    <label for="district" class="form-label fw-semibold">District</label>
+                                    <select name="district" id="district" class="form-select" required>
+                                        <option value="" selected disabled>Select District</option>
+                                        <option value="south_district">south_district</option>
+                                        <option value="north_district">south_district</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <label for="sub_district" class="form-label fw-semibold">Sub-District</label>
+                                    <select name="sub_district" id="sub_district" class="form-select" required>
+                                        <option value="" selected disabled>Select Sub-District</option>
+                                        <option value="south_sub-district">south_sub-district</option>
+                                        <option value="north_sub-district">north_sub-district</option>
+                                    </select>
+                                </div>
+                            </div>
 
                             <div class="d-flex justify-content-center">
-                                <button type="button" class=" btn btn-outline-success w-75">Submit</button>
+                                <button type="submit" class="btn btn-outline-success w-75">Submit</button>
                             </div>
+
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <!-- पूरे फॉर्म को स्क्रीन के बीच में रखने के लिए मुख्य कंटेनर और ऊपर से मार्जिन (mt-5) -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <!-- फॉर्म की चौड़ाई बड़ी स्क्रीन पर आधी (col-md-6) और मोबाइल पर पूरी (col-12) रहेगी -->
+            <div class="col-12 col-md-6">
+
+                <!-- कार्ड लेआउट: हल्की शैडो (shadow-sm) और बिना बॉर्डर (border-0) के साथ -->
+                <div class="card shadow-sm border-0">
+
+                    <!-- कार्ड का ऊपरी हिस्सा (Header): हरा बैकग्राउंड (bg-success) और सफेद टेक्स्ट -->
+                    <div class="card-header py-3 bg-success text-light text-center">
+                        <h3 class="mb-0">Employee Form</h3>
+                    </div>
+
+                    <!-- कार्ड का मुख्य हिस्सा (Body): इसके अंदर फॉर्म के सभी इनपुट्स हैं -->
+                    <div class="card-body p-4">
+                        <form action="">
+
+                            <!-- 1. नाम इनपुट करने का क्षेत्र -->
+                            <div class="mb-2">
+                                <label for="name" class="form-label fw-semibold">Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Enter Your Name">
+                            </div>
+
+                            <!-- 2. ईमेल और पासवर्ड को एक ही रो (Row) में रखने के लिए, मोबाइल पर यह ऊपर-नीचे दिखेंगे -->
+                            <div class="row mb-2 g-2">
+                                <!-- ईमेल इनपुट (ID को ठीक किया गया) -->
+                                <div class="col-12 col-md-6 mb-1">
+                                    <label for="email" class="form-label fw-semibold">Email</label>
+                                    <input type="email" id="email" class="form-control" placeholder="Enter Your Email">
+                                </div>
+                                <!-- पासवर्ड इनपुट (ID को ठीक किया गया) -->
+                                <div class="col-12 col-md-6">
+                                    <label for="password" class="form-label fw-semibold">Password</label>
+                                    <input type="password" id="password" class="form-control"
+                                        placeholder="Enter Your password">
+                                </div>
+                            </div>
+
+                            <!-- 3. भाषा चुनने के लिए रेडियो बटन्स (Spelling और "" की गलती को यहाँ ठीक किया गया है) -->
+                            <div class="mb-2">
+                                <label class="form-label fw-semibold">Language</label>
+                                <div class="d-flex gap-5">
+                                    <div class="form-check">
+                                        <input type="radio" id="hindi" name="language" class="form-check-input">
+                                        <label for="hindi" class="form-check-label">Hindi</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" id="english" name="language" class="form-check-input">
+                                        <label for="english" class="form-check-label">English</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" id="both" name="language" class="form-check-input">
+                                        <label for="both" class="form-check-label">Both</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 4. राज्य, ज़िला और सब-ज़िला चुनने के लिए 3 कॉलम वाली रो (Row) -->
+                            <div class="row mb-4 g-2">
+                                <!-- राज्य (State): इसे डिफ़ॉल्ट रूप से West Bengal किया गया क्योंकि कोलकाता एक शहर है -->
+                                <div class="col-12 col-md-4">
+                                    <label for="state" class="form-label fw-semibold">State</label>
+                                    <input id="state" class="form-control" value="West Bengal" readonly>
+                                </div>
+
+                                <!-- ज़िला (District) ड्रॉपडाउन: बूटस्ट्रैप 5 की फॉर्म-सेलेक्ट क्लास के साथ -->
+                                <div class="col-12 col-md-4">
+                                    <label for="district" class="form-label fw-semibold">District</label>
+                                    <select name="district" id="district" class="form-select" required>
+                                        <option value="" selected disabled>Select District</option>
+                                        <option value="south_district">South District</option>
+                                        <option value="north_district">North District</option>
+                                    </select>
+                                </div>
+
+                                <!-- सब-ज़िला (Sub-District) ड्रॉपडाउन -->
+                                <div class="col-12 col-md-4">
+                                    <label for="sub_district" class="form-label fw-semibold">Sub-District</label>
+                                    <select name="sub_district" id="sub_district" class="form-select" required>
+                                        <option value="" selected disabled>Select Sub-District</option>
+                                        <option value="south_sub_district">South Sub-District</option>
+                                        <option value="north_sub_district">North Sub-District</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- 5. फॉर्म सबमिट करने का बटन (चौड़ाई 75% और हरा आउटलाइन स्टाइल) -->
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn btn-outline-success w-75">Submit</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
 
 
 
