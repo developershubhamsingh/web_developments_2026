@@ -40,7 +40,7 @@ oddEvan(result)
 
 // Ex : 2
 
-oddEvan = (number) => {
+const oddEvan = (number) => {
     let result;
     if (isNaN(number)) {
         result = "Please enter a valid number, strings are not allowed!";
@@ -55,4 +55,61 @@ oddEvan = (number) => {
 let data = parseInt(prompt(`Enter The Number`))
 let finalResult = oddEvan(data)
 alert(finalResult)
+
+// Ex  : 3
+function add(a, b) {
+    return a + b;
+}
+
+add(2, 3)
+5
+
+add(1)
+NaN // to fix this 👇
+
+function add(a = 0, b = 0) {
+    if (isNaN(a) || isNaN(b)) {
+        alert("Invalid input kindly enter the number")
+        return "Invalid input";
+    }
+
+    return a + b;
+}
+add(2, 3)
+5
+add(2) //2+ 0 =2
+2
+
+// Both Are Same👇👆
+
+function add(a = 0, b = 0) {
+
+    a = parseInt(prompt(`Enter first The Number`));
+    b = parseInt(prompt(`Enter second The Number`));
+
+    if (isNaN(a) || isNaN(b)) {
+        alert(` Kindly enter the number `)
+        return "Invalid input";
+    }
+    return a + b
+}
+let Result = add();
+
+if (Result === "Invalid input") {
+    console.log("Invalid input")
+} else {
+    alert(`The addition is : ${Result}`)
+}
+
+// Note :The Rest Operator (...) collects
+// all remaining function arguments into a single array list.
+function add(...numbers) {
+    let total = 0;
+    for (let num of numbers) {
+        total = total + num;
+    }
+    return total; इ
+}
+add(1, 2, 3)
+6
 
