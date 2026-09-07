@@ -36,14 +36,14 @@
       > 3 - true = 2 
       > 3 * false = 0
 
-   >> parseInt :It converts a string into a whole number (integer). left to right
+   >> parseInt : It converts a string into a whole number (integer). left to right
       > let a = " 30 " ; let b =  " 30 " let c = ;
       > c = "3030"
       > parseInt(a) + parseInt (b) = 60
 
    > parseInt("80kg") = 80 (because strating with no .)
       > let price = parseInt("25.99"); = 25
-      > parseInt("hello 10") = NaN (because strating with word)
+      > parseInt("hello 10") = NaN (because starting with word)
 
    >> parseFloat for decimals no.
       > let price = parseFloat("25.99"); = 25.99
@@ -60,7 +60,7 @@
 > A Comparison Operator is used to compare two values and returns either true or false (like == or ===).
 
 # conditional operator :  
-> all the conditional operator will return bool,ean outputs .
+> all the conditional operator will return boolean outputs .
 > = assignment operator 
     > = stores a value inside a variable.
     > Example: let x = 10;
@@ -79,26 +79,10 @@
 > console.log(!isCodingFun); // false (उल्टा हो गया)
 > !! two times negate ex: a = true ; !a = true;
 
-> truthy =numeric value (-ve,+ve) accept 0,any string true
+> truthy = numeric value (-ve,+ve) accept 0,any string , true
 > 0 ,false,null,undefined
 
 > var a = 1 ; !a = false
 > var a = 0 ; !a = true
-
-# Template Literals / String Literals : 
-> modern way to create strings .
-> allows you to easily inject variables  .
-> easily create multi-line text.
-> Ex : old way es 5
-    let name = "Amit";
-    let age = 25;
-
-> let message = "Hello, my name is " + name + " and I am " + age + " years old.";
-
-> Ex new way  es 6
-    let name = "Amit";
-    let age = 25;
-
-> let message = "Hello, my name is " + name + " and I am " + age + " years old.";
-
+ 
 

@@ -1,14 +1,3 @@
-# Variable : 
-   > A variable is like a container used to hold data.
-
-   >> let : let is a variable that allows you to change its value later.
-      > let score = 0;   // starts at 0
-      > score = 5;       // changed to 5!
-   
-   > const : const is a variable that does NOT allow you to change its value later.
-      > const birthYear = 2005; // set forever
-      > birthYear = 2006;// ERROR! JavaScript will stop you.
-
 # A Data Type : 
    > It is simply the category of data (like a number or a word) that you store in your code.
 
