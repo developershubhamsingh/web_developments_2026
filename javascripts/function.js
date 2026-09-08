@@ -108,7 +108,7 @@ function add(...numbers) {
     for (let num of numbers) {
         total = total + num;
     }
-    return total; इ
+    return total; 
 }
 add(1, 2, 3)
 6
