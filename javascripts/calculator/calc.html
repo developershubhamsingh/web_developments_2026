@@ -71,8 +71,15 @@
                             <div class="col-3"><button class="btn btn-warning py-2 w-100"
                                     onclick="press('/')">/</button></div>
                             <div class="col-3"><button class="btn btn-warning py-2 w-100"
-                                    onclick="clearScreen()">C</button></div>
+                                    onclick="press('%')">%</button></div>
                             <div class="col-3"><button class="btn btn-warning py-2 w-100"
+                                    onclick="clearScreen()">C</button></div>
+
+                        </div>
+                        <div class="row mb-3 g-3">
+                            <div class="col-6"><button class="btn btn-warning py-2 w-100" onclick="Delete()">D</button>
+                            </div>
+                            <div class="col-6"><button class="btn btn-warning py-2 w-100"
                                     onclick="calculate()">=</button></div>
                         </div>
                     </div>
@@ -94,6 +101,10 @@
         const clearScreen = () => {
             // Iska matlab screen ko ekdam khali kar do
             screen.value = "";
+        }
+        //delete button controlling
+        const Delete = () => {
+            screen.value = screen.value.slice(0, -1);
         }
 
         // Math solve karne ka shortcut rule
