@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: azure;
+            color: black;
+            transition: background-color 0.7s ease, color 0.7s ease;
+
+        }
+
+        .changeColor {
+            background-color: black;
+            color: azure;
+            transition: background-color 0.7s ease, color 0.7s ease; 
+        }    
+
+    </style>
+
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h2>Light Dark </h2>
+        <p>working on light dark modes</p>
+        <button onclick="changeMode()">change_Mode</button>
+    </div>
+
+    <script>
+        const changeMode = () => {
+            let my_body = document.body;
+            my_body.classList.toggle("changeColor")
+        }
+    </script>
+</body>
+
+</html>
