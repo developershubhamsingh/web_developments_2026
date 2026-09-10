@@ -1,4 +1,4 @@
-// // map() : a JavaScript array method the performs task on every element in an array.
+// // map() : a JavaScript array method that performs task on every element in an array.
 // //    >  It creates a new array with the updated values.
 // //    >  It does not change the original array and its original length.
 
@@ -34,10 +34,10 @@
 
 
 
-// filter() :  a JavaScript array method that filterOut the data based on given conditions .
-//  > It creates a new array based on given conditions
+// filter() :  a JavaScript array method that filterOut 
+//  the data based on given conditions .
+//  > It creates a new array without  modifying the original array
 //  > new array can be shorter or equal to original array
-//  > It does not modify the original array.
 
 // Ex : 1
 let numbers = [3, 4, 5, 6, 7, 32, 42, 23, 43];
@@ -51,9 +51,4 @@ let newNumbers = (numbers.filter(data => {
 // (9) [3, 4, 5, 6, 7, 32, 42, 23, 43]
 
 
-// Ex : 2
-const newArray = (oldArray.filter(data => {
-    return {
-        name: data.name.toUpperCase()
-    }
-}))
+ 
