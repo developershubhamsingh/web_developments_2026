@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center style="margin-top: 25%;">
+        <button onclick="geoLocation()">Get Location</button>
+        <p id="out"></p>
+        <p id="weather"></p>
+    </center>
+
+    <script>
+        let x = document.getElementById("out")
+        let y = document.getElementById("weather")
+
+        const geoLocation = () => {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition)
+            } else {
+                x.innerText = "Geo Location Not Supported"
+            }
+        }
+        const showPosition = (data) => {
+            console.log(data)
+            let latitude = data.coords.latitude;
+            let longitude = data.coords.longitude;
+            let result = ` The latitude is : ${latitude} & The longitude is : ${longitude}`
+            x.innerText = result
+
+            // const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=b8a5e083be34c10a318010d587eb276c`;
+            const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=b8a5e083be34c10a318010d587eb276c`;
+
+            fetch(url, { method: 'GET' })
+                // .then((res) => console.log(res.json()))
+                .then((res) => res.json())
+                .then((data) => {
+                    console.log(data);
+                    let city = data.name;
+                    let temperatures = `${data.main.temp}`;
+                    let weather = `${data.weather[0].main}, feels like: ${data.weather[0].description}`;
+                    let Coordinate = `latitude : ${data.coord.lat} & longitude : ${data.coord.lon}`;
+                    y.innerText = `In Your city : ${city} \n Temperature is : ${temperatures}  \n Weather : ${weather} \n Coordinate : ${Coordinate}`
+                })
+
+        }
+    </script>
+</body>
+
+</html>
