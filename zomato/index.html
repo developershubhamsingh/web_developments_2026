@@ -8,6 +8,7 @@
     <link rel="icon" href="./images/icon.jfif">
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./midea_query.css">
+    <script src="./coupon.js"></script>
 </head>
 
 <body>
@@ -19,110 +20,115 @@
             <a href=""><img src="./images/youtube.png" alt=""></a>
         </div>
     </header>
-
-    <div class="search">
-        <div class="logo"><span>D!</span></div>
-        <div class="heading">
-            <div class="backgr">Find Best Food Near You !</div>
-        </div>
-        <div class="selectBox">
-            <select name="" id="">
-                <option value="" selected disabled>----- Select City -----</option>
-            </select>
-            <select name="" id="restselect">
-                <option value="" selected disabled>----- Select Restaurant -----</option>
-            </select>
-        </div>
-    </div> 
-    <div class="QuickSearch">
-        <h1>Quick Search</h1>
-        <h3>Find Restaurants Near You !</h3>
-        <div class="box">
-            <div class="card">
-                <div class="tile1">
-                    <img src="./images/breakfast.jpg" alt="">
-                </div>
-                <div class="tile2">
-                    <div class="tileHeadindg">Breakfast</div>
-                    <div class="tileSubHeadindg">Best Deal On Breakfast</div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="tile1">
-                    <img src="./images/lunch.jfif" alt="">
-                </div>
-                <div class="tile2">
-                    <div class="tileHeadindg">Lunch</div>
-                    <div class="tileSubHeadindg">Best Deal On Lunch</div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="tile1">
-                    <img src="./images/dinner.jfif" alt="">
-                </div>
-                <div class="tile2">
-                    <div class="tileHeadindg">Dinner</div>
-                    <div class="tileSubHeadindg">Best Deal On Dinner</div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="tile1">
-                    <img src="./images/snaks.jfif" alt="">
-                </div>
-                <div class="tile2">
-                    <div class="tileHeadindg">Snacks</div>
-                    <div class="tileSubHeadindg">Best Deal On Snacks</div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="tile1">
-                    <img src="./images/drinks.jpg" alt="">
-                </div>
-                <div class="tile2">
-                    <div class="tileHeadindg">Drinks</div>
-                    <div class="tileSubHeadindg">Best Deal On Drinks</div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="tile1">
-                    <img src="./images/club.jfif" alt="">
-                </div>
-                <div class="tile2">
-                    <div class="tileHeadindg">Club</div>
-                    <div class="tileSubHeadindg">Best Deal On Club</div>
-                </div>
-            </div>
-
-        </div>
+    <div id="coupons">
+        <button onclick="closeCoupon()">&times;</button>
+        <p class="couponText">Coupon</p>
     </div>
-    <footer>
-        <div class="footertext">&copy;new Learner 2025 - 2026</div>
-        <hr>
-        <div class="footercontainer">
-            <div class="footerText">
-                <ul>
-                    <li>About D!</li>
-                    <li>Work here !</li>
-                </ul>
+    <div class="content-blur">
+        <div class="search">
+            <div class="logo"><span>D!</span></div>
+            <div class="heading">
+                <div class="backgr">Find Best Food Near You !</div>
             </div>
-            <div class="footerText">
-                <ul>
-                    <li>Track Orders</li>
-                    <li>Call here !</li>
-                </ul>
-            </div>
-            <div class="footerText nobr">
-                <ul>
-                    <li>Complaints</li>
-                    <li>Bike On Rent</li>
-                </ul>
+            <div class="selectBox">
+                <select name="" id="">
+                    <option value="" selected disabled>----- Select City -----</option>
+                </select>
+                <select name="" id="restselect">
+                    <option value="" selected disabled>----- Select Restaurant -----</option>
+                </select>
             </div>
         </div>
+        <div class="QuickSearch">
+            <h1>Quick Search</h1>
+            <h3>Find Restaurants Near You !</h3>
+            <div class="box">
+                <div class="card">
+                    <div class="tile1">
+                        <img src="./images/breakfast.jpg" alt="">
+                    </div>
+                    <div class="tile2">
+                        <div class="tileHeadindg">Breakfast</div>
+                        <div class="tileSubHeadindg">Best Deal On Breakfast</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="tile1">
+                        <img src="./images/lunch.jfif" alt="">
+                    </div>
+                    <div class="tile2">
+                        <div class="tileHeadindg">Lunch</div>
+                        <div class="tileSubHeadindg">Best Deal On Lunch</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="tile1">
+                        <img src="./images/dinner.jfif" alt="">
+                    </div>
+                    <div class="tile2">
+                        <div class="tileHeadindg">Dinner</div>
+                        <div class="tileSubHeadindg">Best Deal On Dinner</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="tile1">
+                        <img src="./images/snaks.jfif" alt="">
+                    </div>
+                    <div class="tile2">
+                        <div class="tileHeadindg">Snacks</div>
+                        <div class="tileSubHeadindg">Best Deal On Snacks</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="tile1">
+                        <img src="./images/drinks.jpg" alt="">
+                    </div>
+                    <div class="tile2">
+                        <div class="tileHeadindg">Drinks</div>
+                        <div class="tileSubHeadindg">Best Deal On Drinks</div>
+                    </div>
+                </div>
 
+                <div class="card">
+                    <div class="tile1">
+                        <img src="./images/club.jfif" alt="">
+                    </div>
+                    <div class="tile2">
+                        <div class="tileHeadindg">Club</div>
+                        <div class="tileSubHeadindg">Best Deal On Club</div>
+                    </div>
+                </div>
 
-
-    </footer>
+            </div>
+        </div>
+        <footer>
+            <div class="footertext">&copy;new Learner 2025 - 2026</div>
+            <hr>
+            <div class="footercontainer">
+                <div class="footerText">
+                    <ul>
+                        <li>About D!</li>
+                        <li>Work here !</li>
+                    </ul>
+                </div>
+                <div class="footerText">
+                    <ul>
+                        <li>Track Orders</li>
+                        <li>Call here !</li>
+                    </ul>
+                </div>
+                <div class="footerText nobr">
+                    <ul>
+                        <li>Complaints</li>
+                        <li>Bike On Rent</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script>
+            window.onload = LCoupon();
+        </script>
+    </div>
 </body>
 
 </html>
