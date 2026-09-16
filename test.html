@@ -32,102 +32,182 @@
     -->
 
 
-
+    <!-- table : -->
     <!-- <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-6">
-                <div class=" p-1 card shadow-sm border-0">
-                    <div class="py-3 card-header bg-success text-light text-center">
-                        <h3 class="mb-0">Employee Form</h3>
+            <div class="col-12 col-md-8">
+                <div class=" card overflow-hidden shadow-sm border-0">
+                    <div class="py-2 card-header bg-success text-light text-center">
+                        <h4 class="mb-0">Employee Data</h4>
                     </div>
-                    <div class="card-body">
-                        <form action="">
-                            <div class="mb-1">
-                                <label for="userName" class="form-label fw-semibold">Name </label>
-                                <input type="text" id="userName" autocomplete="name" name="userName"
-                                    class="form-control" placeholder="Enter Your name">
-                            </div>
-                            <div class="row mb-2 g-1">
-                                <div class="col-12 col-md-6">
-                                    <label for="userEmail" class="form-label fw-semibold">Email </label>
-                                    <input type="email" name="userEmail" id="userEmail" autocomplete="email"
-                                        class="form-control" placeholder="Enter Your email">
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <label for="userPassword" class="form-label fw-semibold">Password</label>
-                                    <input type="password" id="userPassword" name="userPassword" class="form-control"
-                                        placeholder="Enter Your password">
-                                </div>
-                            </div>
-                            <div class="mb-2 row g-1">
-                                <div class="col-12 col-md-4">
-                                    <label for="state" class="form-label fw-semibold">State</label>
-                                    <input type="text" id="state" name="state" class="form-control" readonly
-                                        value="West Bengal">
-                                </div>
-                                <div class="col-12 col-md-4">
-                                    <label for="District" class="form-label fw-semibold">District</label>
-                                    <select name="District" id="District" class="form-select" required>
-                                        <option value="District" selected disabled>District</option>
-                                        <option value="District 1">District 1</option>
-                                        <option value="District 2">District 2</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-md-4">
-                                    <label for="subDistrict" class="form-label fw-semibold">Sub District</label>
-                                    <select name="subDistrict" id="subDistrict" class="form-select">
-                                        <option value="northDistrict" selected disabled>Sub-District</option>
-                                        <option value="southDistrict">southDistrict</option>
-                                        <option value="northDistrict">northDistrict</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="language" class="form-label fw-semibold">Language</label>
-                                <div class="d-flex gap-5 ">
-                                    <div class="form-check">
-                                        <input type="radio" name="Language" id="hindi" value="hindi"
-                                            class="form-check-input">
-                                        <label for="hindi" class="form-check-label fw-semibold">Hindi </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input type="radio" name="Language" id="english" value="english"
-                                            class="form-check-input">
-                                        <label for="english" class="form-check-label fw-semibold">English</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input type="radio" name="Language" id="english&hindi" value="english&hindi"
-                                            class="form-check-input" checked>
-                                        <label for="english&hindi" class="form-check-label fw-semibold">Both</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-3 d-flex justify-content-center">
-                                <button type="submit" class="btn btn-outline-success w-75">Submit</button>
-                            </div>
-                        </form>
-
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class=" mb-0 table table-hover ">
+                                <thead>
+                                    <tr class="text-center table-info">
+                                        <th>Sr No</th>
+                                        <th>Name</th>
+                                        <th>Age</th>
+                                        <th>Designation</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="text-center">
+                                        <td>01</td>
+                                        <td>Rana</td>
+                                        <td>25</td>
+                                        <td>Developer</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td>02</td>
+                                        <td>Reena</td>
+                                        <td>25</td>
+                                        <td>Developer</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td>03</td>
+                                        <td>Raka</td>
+                                        <td>25</td>
+                                        <td>Developer</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td>04</td>
+                                        <td>Teena</td>
+                                        <td>25</td>
+                                        <td>Developer</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div> -->
+    <!-- क्या आपको इसमें एक्शन बटन (जैसे Edit या Delete) जोड़ने हैं?क्या आपको टेबल के ऊपर एक सर्च बार (Search Bar) चाहिए?क्या इसमें और कर्मचारियों का डेटा जोड़ना है? -->
+    <hr>
+    <!-- forms -->
+    <!-- <div class="container mb-2">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-7">
+                <div class="p-1 card shadow-sm border-0 overflow-hidden">
+                    <div class="py-2 card-header bg-success text-light text-center">
+                        <h4 class="mb-0">Employee Data</h4>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="mb-2">
+                                <label for="name" class="form-label">Name </label>
+                                <input type="text" id="name" class="form-control" name="name"
+                                    placeholder="Enter Your Full Name" required autocomplete="name" maxlength="30"
+                                    autocapitalize="">
+                            </div>
+                            <div class="row g-2 mb-2">
+                                <div class="col-12 col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" class="form-control" placeholder="Enter Your Email"
+                                        name="email" required autocomplete="email" maxlength="30">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" id="password" class="form-control"
+                                        placeholder="Enter Your Password" name="password" required
+                                        autocomplete="password" maxlength="30">
+                                </div>
+                            </div>
+                            <div class="row mb-2 ">
+                                <div class="col-7 ">
+                                    <label for="mobile" class="form-label">Mobile</label>
+                                    <input type="tel" id="mobile" class="form-control" required
+                                        placeholder="Enter Mobile Number" name="mobile" maxlength="12"
+                                        autocomplete="mobile">
+                                </div>
 
+                                <div class="col-5">
+                                    <label class="form-label">Gender</label>
+                                    <div class="d-flex mt-2 gap-3">
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="male" name="gender"
+                                                value="Male" checked>
+                                            <label for="male" class="form-check-label">M</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="female" name="gender"
+                                                value="Female">
+                                            <label for="female" class="form-check-label">F</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <div class="col-12">
+                                    <label for="state" class="form-label">State</label>
+                                    <input type="text" id="state" class="form-control" value="West Bengal" readonly
+                                        name="state">
+                                </div>
+                            </div>
 
-
-
-   
-
-
-
-
-
-
-
-
-
-
+                            <div class="row mb-2 g-2">
+                                <div class="col-12 col-md-6">
+                                    <label for="District" class="form-label">District</label>
+                                    <select name="District" id="District" class="form-select" required>
+                                        <option value="" selected disabled>District</option>
+                                        <option value="South District">South District</option>
+                                        <option value="North District">North District</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="Sub-District" class="form-label">Sub District</label>
+                                    <select name="Sub-District" id="Sub-District" class="form-select" required>
+                                        <option value="" selected disabled>Select Sub-District</option>
+                                        <option value="Sub-District 1">Sub-District 1</option>
+                                        <option value="Sub-District 2">Sub-District 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-5">
+                                    <label for="Designation" class="form-label">Designation</label>
+                                    <select name="Designation" id="Designation" class="form-select" required>
+                                        <option value="" selected disabled>Select Designation</option>
+                                        <option value="Developer">Developer</option>
+                                        <option value="Data Analyst">Data Analyst</option>
+                                    </select>
+                                </div>
+                                <div class="col-7">
+                                    <div class="">
+                                        <label for="language" class="form-label">Language</label>
+                                    </div>
+                                    <div class="d-flex gap-1">
+                                        <div class="form-check">
+                                            <input type="radio" id="Hindi" name="language" value="Hindi"
+                                                class="form-check-input" checked>
+                                            <label for="Hindi" class="form-check-label">Hindi</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" id="English" name="language" value="English"
+                                                class="form-check-input">
+                                            <label for="English" class="form-check-label">English</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" id="Both" name="language" value="Hindi_English"
+                                                class="form-check-input">
+                                            <label for="Both" class="form-check-label">Both</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class=" btn-md btn btn-outline-success w-75" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  -->
+    <!-- क्या आप इस पूरे फॉर्म के नीचे डेटा दिखाने के लिए एक रिस्पॉन्सिव HTML टेबल बनाना चाहते हैं, या हम सीधे इसके जावास्क्रिप्ट (JavaScript) लॉजिक पर काम शुरू करें? -->
+    <hr>
 
 
 
