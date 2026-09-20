@@ -208,12 +208,189 @@
     </div>  -->
     <!-- क्या आप इस पूरे फॉर्म के नीचे डेटा दिखाने के लिए एक रिस्पॉन्सिव HTML टेबल बनाना चाहते हैं, या हम सीधे इसके जावास्क्रिप्ट (JavaScript) लॉजिक पर काम शुरू करें? -->
     <hr>
+    <!-- calculator -->
+
+    <!-- <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-6 col-lg-4">
+                <div class="card overflow-hidden rounded-4">
+                    <div class="card-header py-2 bg-success text-light text-center">
+                        <h4 class="mb-0">
+                            Calculator
+                        </h4>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="col-12 mb-4">
+                            <input id="display" type="text"
+                                class="form-control form-control-lg text-end fw-bold bg-light" placeholder="0" readonly>
+                        </div>
+                        <div class="row mb-3 g-2">
+                            <div class="col-3"><button class="btn btn-dark w-100" onclick="press('1')">1</button></div>
+                            <div class="col-3"><button class="btn btn-dark w-100" onclick="press('2')">2</button></div>
+                            <div class="col-3"><button class="btn btn-dark w-100" onclick="press('3')">3</button></div>
+                            <div class="col-3"><button class="btn btn-warning w-100" onclick="press('+')">+</button>
+                            </div>
+                        </div>
+                        <div class="row mb-3 g-2">
+                            <div class="col-3"><button class="btn btn-dark w-100" onclick="press('4')">4</button></div>
+                            <div class="col-3"><button class="btn btn-dark w-100" onclick="press('5')">5</button></div>
+                            <div class="col-3"><button class="btn btn-dark w-100" onclick="press('6')">6</button></div>
+                            <div class="col-3"><button class="btn btn-warning w-100" onclick="press('-')">-</button>
+                            </div>
+                        </div>
+                        <div class="row mb-3 g-2">
+                            <div class="col-3"><button class="btn btn-dark w-100" onclick="press('7')">7</button></div>
+                            <div class="col-3"><button class="btn btn-dark w-100" onclick="press('8')">8</button></div>
+                            <div class="col-3"><button class="btn btn-dark w-100" onclick="press('9')">9</button></div>
+                            <div class="col-3"><button class="btn btn-warning w-100" onclick="press('*')">x</button>
+                            </div>
+                        </div>
+                        <div class="row mb-3 g-2">
+                            <div class="col-3"><button class="btn btn-dark w-100" onclick="press('0')">0</button></div>
+                            <div class="col-3"><button class="btn btn-warning w-100" onclick="press('/')">/</button>
+                            </div>
+                            <div class="col-3"><button class="btn btn-warning w-100"
+                                    onclick="pres('**2')">x&sup2;</button></div>
+                            <div class="col-3"><button class="btn btn-warning w-100" onclick="press('%')">%</button>
+                            </div>
+                        </div>
+                        <div class="row mb-3 g-2">
+                            <div class="col-3"><button class="btn btn-warning w-100" onclick="clear()">C</button></div>
+                            <div class="col-3"><button class="btn btn-warning w-100" onclick="Delete()">D</button></div>
+                            <div class="col-6"><button class="btn btn-warning w-100" onclick="press('=')">=</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        screen = document.getElementById("display");
+        console.log(screen.placeholder)
+        
+        const press = () => {
+            screen.value = screen.value + Number
+        }
+    </script>
+</body> -->
+    <hr>
 
 
 
 
 
+    <!-- --------------------------------------------- -->
 
-</body>
+    <div class="container">
+        <div class="row">
+            <div class="col-10 col-md-8 col-lg-6">
+                <div class="card justify-content-center rounded-4 border-1 overflow-hidden">
+                    <div class="py-2 card-header bg-success text-light text-center">
+                        <h4 class="mb-0 fw-bold">Calculator</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-5">
+                            <input type="text" id="display" placeholder="0" readonly
+                                class="form-control form-control-md bg-light text-end fw-bold fs-5">
+                        </div>
+                        <div class="row mb-3 g-3">
+                            <div class="col-3"> <button class="btn btn-dark py-2 w-100" onclick="press('1')">1</button>
+                            </div>
+                            <div class="col-3"> <button class="btn btn-dark py-2 w-100" onclick="press('2')">2</button>
+                            </div>
+                            <div class="col-3"> <button class="btn btn-dark py-2 w-100" onclick="press('3')">3</button>
+                            </div>
+                            <div class="col-3"> <button class="btn btn-warning py-2 w-100"
+                                    onclick="press('+')">+</button></div>
+                        </div>
+                        <div class="row mb-3 g-3">
+                            <div class="col-3"> <button class="btn btn-dark py-2 w-100" onclick="press('4')">4</button>
+                            </div>
+                            <div class="col-3"> <button class="btn btn-dark py-2 w-100" onclick="press('5')">5</button>
+                            </div>
+                            <div class="col-3"> <button class="btn btn-dark py-2 w-100" onclick="press('6')">6</button>
+                            </div>
+                            <div class="col-3"> <button class="btn btn-warning py-2 w-100"
+                                    onclick="press('-')">-</button></div>
+                        </div>
+                        <div class="row mb-3 g-3">
+                            <div class="col-3"> <button class="btn btn-dark py-2 w-100" onclick="press('7')">7</button>
+                            </div>
+                            <div class="col-3"> <button class="btn btn-dark py-2 w-100" onclick="press('8')">8</button>
+                            </div>
+                            <div class="col-3"> <button class="btn btn-dark py-2 w-100" onclick="press('9')">9</button>
+                            </div>
+                            <div class="col-3"> <button class="btn btn-warning py-2 w-100"
+                                    onclick="press('*')">x</button></div>
+                        </div>
+                        <div class="row mb-3 g-3">
+                            <div class="col-3"> <button class="btn btn-dark py-2 w-100" onclick="press('0')">0</button>
+                            </div>
+                            <div class="col-3"> <button class="btn btn-warning py-2 w-100"
+                                    onclick="press('/')">/</button></div>
+                            <div class="col-3"> <button class="btn btn-warning py-2 w-100"
+                                    onclick="press('%')">%</button></div>
+                            <div class="col-3"> <button class="btn btn-warning py-2 w-100"
+                                    onclick="square()">x&sup2;</button></div>
+                        </div>
+                        <div class="row mb-3 g-3">
+                            <div class="col-3"> <button class="btn btn-warning py-2 w-100"
+                                    onclick="clearScreen()">C</button></div>
+                            <div class="col-3"> <button class="btn btn-warning py-2 w-100" onclick="Delete()">D</button>
+                            </div>
+                            <div class="col-6"> <button class="btn btn-warning py-2 w-100"
+                                    onclick="calculate()">=</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        let screen = document.getElementById("display");
+        console.log(screen.placeholder)
+
+
+        const press = (number) => {
+            screen.value = screen.value + number;
+        }
+
+
+        const clearScreen = (number) => {
+            screen.value = "";
+
+        }
+
+        const Delete = (number) => {
+            screen.value = screen.value.slice(0, -1);
+
+        }
+        const square = (number) => {
+            try {
+                screen.value = Math.pow(eval(screen.value) || 0, 2);
+            }
+            catch (error) {
+                 screen.value = "Error"
+            }
+        }
+
+        const calculate = (number) => {
+            try {
+                screen.value = eval(screen.value)
+            }
+            catch (error) {
+                screen.value = "Error"
+            }
+
+        }
+    </script>
+
+
+
+
 
 </html>
