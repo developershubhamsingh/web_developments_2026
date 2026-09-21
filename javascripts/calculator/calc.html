@@ -33,7 +33,7 @@
                     <div class="card-body p-5 bg-light">
                         <div class="mb-3">
                             <input type="text" id="display"
-                                class="form-control form-control-lg text-end fw-bold bg-light" placeholder="0" readonly>
+                                class="form-control form-control-lg text-end fw-bold bg-light" value="0" readonly>
                         </div>
                         <div class="row mb-2 g-3">
                             <div class="col-3"><button class="btn btn-dark py-2 w-100" onclick="press('1')">1</button>
@@ -73,11 +73,15 @@
                             <div class="col-3"><button class="btn btn-warning py-2 w-100"
                                     onclick="press('%')">%</button></div>
                             <div class="col-3"><button class="btn btn-warning py-2 w-100"
-                                    onclick="clearScreen()">C</button></div>
+                                    onclick="press('²')">x<sup>2</sup></button>
+                            </div>
 
                         </div>
                         <div class="row mb-3 g-3">
-                            <div class="col-6"><button class="btn btn-warning py-2 w-100" onclick="Delete()">D</button>
+
+                            <div class="col-3"><button class="btn btn-warning py-2 w-100"
+                                    onclick="clearScreen()">C</button></div>
+                            <div class="col-3"><button class="btn btn-warning py-2 w-100" onclick="Delete()">D</button>
                             </div>
                             <div class="col-6"><button class="btn btn-warning py-2 w-100"
                                     onclick="calculate()">=</button></div>
@@ -90,7 +94,7 @@
     <script>
         // 1. Pehle input screen ko pakad kar 'screen' variable me rakh liya
         const screen = document.getElementById("display");
-        console.log(screen.placeholder)
+        console.log(screen.value)
 
         // 1. Pehle input screen ko pakad kar 'screen' variable me rakh liya
         const press = (number) => {
@@ -110,7 +114,9 @@
         // Math solve karne ka shortcut rule
         const calculate = () => {
             try {
-                screen.value = eval(screen.value)
+                //square k liye
+                let square = screen.value.replace(/²/g, '**2')
+                screen.value = eval(square)
             } catch (err) {
                 screen.value = "Error";
             }
